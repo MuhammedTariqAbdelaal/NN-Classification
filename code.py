@@ -15,7 +15,7 @@ model = keras.models.Sequential([
     keras.layers.Flatten(input_shape=[28,28]),
     keras.layers.Dense(300, activation="relu"),
     keras.layers.Dense(100, activation="relu"),
-    keras.layers.Dense(0, activation="softmax")
+    keras.layers.Dense(10, activation="softmax")
 ])
 
 xvalid,xtrain = xtrain[:5000]/255.0, xtrain[5000:]/255.0
